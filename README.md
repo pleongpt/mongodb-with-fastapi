@@ -15,7 +15,7 @@ activate your Python virtualenv, and then run the following from your terminal (
 pip install -r requirements.txt
 
 # Configure the location of your MongoDB database:
-export MONGODB_URL="mongodb+srv://<username>:<password>@<url>/<db>?retryWrites=true&w=majority"
+export MONGODB_URL="mongodb://<username>:<password>@<url>/<db>?retryWrites=true&w=majority"
 
 # Start the service:
 uvicorn app:app --reload
